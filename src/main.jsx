@@ -1,5 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+// Supports weights 300-800
+import * as bootstrap from 'bootstrap'
+import '@fontsource-variable/open-sans/wght.css';
 import './index.css'
 import App from './App.jsx'
 
