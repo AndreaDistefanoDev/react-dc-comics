@@ -10,3 +10,16 @@ body {
     font-size: 2rem;
 
 }
+
+#first-section-footer {
+    background-image: url("./assets/img/footer-bg.jpg");
+}
+
+footer {
+    background-color: #303030;
+    min-height: 70vh;
+}
+
+p {
+    padding: 5rem;
+}
