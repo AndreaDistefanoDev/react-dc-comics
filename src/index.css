@@ -4,3 +4,9 @@ body {
     font-family: 'Open Sans Variable', sans-serif;
     color: black;
 }
+
+#section_black {
+    min-height: 15vh;
+    font-size: 2rem;
+
+}
