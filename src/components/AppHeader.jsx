@@ -2,24 +2,67 @@ import appLogo from '../assets/img/dc-logo.png'
 
 export default function AppHeader() {
 
-
+    const links = [
+        {
+            id: 1,
+            text: 'characters',
+            path: '/characters'
+        },
+        {
+            id: 2,
+            text: 'comics',
+            path: '/comics'
+        },
+        {
+            id: 3,
+            text: 'movies',
+            path: '/movies'
+        },
+        {
+            id: 4,
+            text: 'tv',
+            path: '/tv'
+        },
+        {
+            id: 5,
+            text: 'games',
+            path: '/games'
+        },
+        {
+            id: 6,
+            text: 'collectibles',
+            path: '/collectibles'
+        },
+        {
+            id: 7,
+            text: 'videos',
+            path: '/videos'
+        },
+        {
+            id: 8,
+            text: 'fans',
+            path: '/fans'
+        },
+        {
+            id: 9,
+            text: 'news',
+            path: '/news'
+        },
+        {
+            id: 10,
+            text: 'shop',
+            path: '/shop'
+        }
+    ]
     return (
         <header>
             <nav className="navbar navbar-expand bg-body fw-semibold">
                 <div className="container">
                     <a className="navbar-brand" href="#"><img src={appLogo} alt="" /></a>
                     <div className="d-flex gap-3 text-uppercase">
-                        <a className="nav-link" href="#">characters</a>
-                        <a className="nav-link" href="#">comics</a>
-                        <a className="nav-link" href="#">movies</a>
-                        <a className="nav-link" href="#">tv</a>
-                        <a className="nav-link" href="#">games</a>
-                        <a className="nav-link" href="#">collectibles</a>
-                        <a className="nav-link" href="#">videos</a>
-                        <a className="nav-link" href="#">fans</a>
-                        <a className="nav-link" href="#">news</a>
-                        <a className="nav-link" href="#">shop</a>
-
+                        {links.map((link) => (
+                            <a href={link.path} key={link.id}>{link.text}</a>
+                        ))}
                     </div>
                 </div>
             </nav>
