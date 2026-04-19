@@ -3,20 +3,37 @@ import merchandiseComicsLogo from '../assets/img/buy-comics-merchandise.png'
 import subscriptionsComicsLogo from '../assets/img/buy-comics-subscriptions.png'
 import locatorComicsLogo from '../assets/img/buy-comics-shop-locator.png'
 import powerVisaComicsLogo from '../assets/img/buy-dc-power-visa.svg'
-
+import comics from '../assets/data/comics'
 
 
 
 
 export default function AppMain() {
-
+    { comics }
 
     return (
-        <main>
-            <div className="bg-black text-white">
-                <section id='section_black'>
-                    <p>__Content here--</p>
-                </section>
+
+        <main className='bg-black'>
+            <div className="banner"></div>
+            <div className="container">
+                <div className="row text-white">
+                    {
+                        comics.map((comic) => (
+                            <div className="col-2" key={comic.id}>
+                                <div className="card card-img-top">
+                                    <img src={comic.thumb} alt="" />
+                                </div>
+                                <div className="card-body">
+                                    <h5 className='text-uppercase'>{comic.title}</h5>
+                                </div>
+                            </div>
+                        ))
+
+                    }
+
+
+                </div>
+
             </div>
             <div className="bg-primary text-white text-uppercase">
                 <div className="row">
