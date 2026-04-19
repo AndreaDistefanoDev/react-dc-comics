@@ -61,7 +61,7 @@ export default function AppHeader() {
                     <a className="navbar-brand" href="#"><img src={appLogo} alt="" /></a>
                     <div className="d-flex gap-3 text-uppercase">
                         {links.map((link) => (
-                            <a href={link.path} key={link.id}>{link.text}</a>
+                            <a className='text-decoration-none text-black' href={link.path} key={link.id}>{link.text}</a>
                         ))}
                     </div>
                 </div>

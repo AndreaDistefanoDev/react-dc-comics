@@ -15,17 +15,16 @@ export default function AppMain() {
 
         <main className='bg-black'>
             <div className="banner"></div>
-            <div className="container">
-                <div className="row text-white">
+            <div className="container comics">
+                <div className="row text-white row-cols-6">
                     {
                         comics.map((comic) => (
-                            <div className="col-2" key={comic.id}>
-                                <div className="card card-img-top">
-                                    <img src={comic.thumb} alt="" />
-                                </div>
-                                <div className="card-body">
-                                    <h5 className='text-uppercase'>{comic.title}</h5>
-                                </div>
+                            <div className="col" key={comic.id}>
+                                <img className='w-100' src={comic.thumb} alt="" />
+
+                                <h5 className='text-uppercase'>{comic.title}</h5>
+
+
                             </div>
                         ))
 
@@ -35,30 +34,33 @@ export default function AppMain() {
                 </div>
 
             </div>
-            <div className="bg-primary text-white text-uppercase">
-                <div className="row">
-                    <div className="col">
-                        <img src={digitalComicsLogo} alt="" />
-                        <span>digital comics</span>
-                    </div>
-                    <div className="col">
-                        <img src={merchandiseComicsLogo} alt="" />
-                        <span>dc merchandise</span>
-                    </div>
-                    <div className="col">
-                        <img src={subscriptionsComicsLogo} alt="" />
-                        <span>subscriptions</span>
-                    </div>
-                    <div className="col">
-                        <img src={subscriptionsComicsLogo} alt="" />
-                        <span>comic shop locator</span>
-                    </div>
-                    <div className="col">
-                        <img src={powerVisaComicsLogo} alt="" />
-                        <span>dc power visa</span>
+            <div className='bg-primary'>
+                <div className="container  text-white text-uppercase">
+                    <div className="row row-col-5">
+                        <div className="col">
+                            <img src={digitalComicsLogo} alt="" />
+                            <span>digital comics</span>
+                        </div>
+                        <div className="col">
+                            <img src={merchandiseComicsLogo} alt="" />
+                            <span>dc merchandise</span>
+                        </div>
+                        <div className="col">
+                            <img src={subscriptionsComicsLogo} alt="" />
+                            <span>subscriptions</span>
+                        </div>
+                        <div className="col">
+                            <img src={subscriptionsComicsLogo} alt="" />
+                            <span>comic shop locator</span>
+                        </div>
+                        <div className="col">
+                            <img src={powerVisaComicsLogo} alt="" />
+                            <span>dc power visa</span>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </main>
     )
 }
