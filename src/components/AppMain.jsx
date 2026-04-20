@@ -15,10 +15,10 @@ export default function AppMain() {
 
         <main>
             <div className="banner"></div>
+            <div className="etichetta bg-primary">
+                <p><span class="w3-tag text-white">curren series</span></p>
+            </div>
             <div className="container comics">
-                <div className="etichetta">
-                    <p><span class="w3-tag text-white">curren series</span></p>
-                </div>
 
                 <div className="row text-white row-cols-6">
                     {

@@ -40,6 +40,13 @@ footer {
 main {
     background-color: #1c1c1c;
 
+    .etichetta {
+        padding: 1px;
+        width: 100px;
+        position: relative;
+        left: 300px;
+    }
+
     button {
         border-radius: 0px !important;
         width: 17%;
