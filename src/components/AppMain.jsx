@@ -13,16 +13,20 @@ export default function AppMain() {
 
     return (
 
-        <main className='bg-black'>
+        <main>
             <div className="banner"></div>
             <div className="container comics">
+                <div className="etichetta">
+                    <p><span class="w3-tag text-white">curren series</span></p>
+                </div>
+
                 <div className="row text-white row-cols-6">
                     {
                         comics.map((comic) => (
                             <div className="col" key={comic.id}>
                                 <img className='w-100' src={comic.thumb} alt="" />
 
-                                <h5 className='text-uppercase'>{comic.title}</h5>
+                                <h5 className='text-uppercase pt-3 pb-5'>{comic.title}</h5>
 
 
                             </div>
@@ -32,7 +36,10 @@ export default function AppMain() {
 
 
                 </div>
+                <div className='d-flex justify-content-center pb-4'>
+                    <button className='btn btn-primary text-uppercase'>load more</button>
 
+                </div>
             </div>
             <div className='bg-primary'>
                 <div className="container  text-white text-uppercase">

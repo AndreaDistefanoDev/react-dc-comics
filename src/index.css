@@ -26,7 +26,8 @@ footer {
 
 .banner {
     background-image: url('./assets/img/jumbotron.jpg');
-    min-height: 38vh;
+    width: 100%;
+    min-height: 400px;
 }
 
 .testo-stretto {
@@ -37,8 +38,17 @@ footer {
 
 
 main {
+    background-color: #1c1c1c;
+
+    button {
+        border-radius: 0px !important;
+        width: 17%;
+        font-weight: 700 !important;
+        font-size: 20px !important;
+        letter-spacing: -2px;
+    }
+
     img {
-        height: 160px;
-        object-fit: cover;
+        height: 190px;
     }
 }

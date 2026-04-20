@@ -57,7 +57,7 @@ export default function AppHeader() {
     return (
         <header>
             <nav className="navbar navbar-expand bg-body fw-semibold">
-                <div className="container">
+                <div className="container p-2">
                     <a className="navbar-brand" href="#"><img src={appLogo} alt="" /></a>
                     <div className="d-flex gap-3 text-uppercase">
                         {links.map((link) => (
