@@ -40,11 +40,28 @@ footer {
 main {
     background-color: #1c1c1c;
 
-    .etichetta {
-        padding: 1px;
-        width: 100px;
+    .position-icon {
         position: relative;
-        left: 300px;
+        top: 60px;
+    }
+
+    .section-blue {
+        min-height: 180px;
+    }
+
+    .icone {
+        width: 55px;
+        height: 65px;
+    }
+
+    .etichetta {
+        padding: 10px 13px;
+        width: 255px;
+        position: relative;
+        bottom: 30px;
+        right: 18px;
+        font-weight: 700;
+        font-size: 1.75rem;
     }
 
     button {
