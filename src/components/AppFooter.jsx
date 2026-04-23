@@ -12,9 +12,9 @@ export default function AppFooter() {
 
     return (
         <footer className="text-white">
-            <div className="container d-flex">
+            <div className="height-footer container d-flex ">
 
-                <div className="row m-0 me-0">
+                <div className="d-flex flex-column">
                     <div className="col pt-5 p-3 height-footer width-footer">
                         <h3 className='text-uppercase fw-bold testo-stretto'>dc comics</h3>
                         <ul className='list-unstyled'>
@@ -64,8 +64,10 @@ export default function AppFooter() {
                     </div>
                 </div>
 
+                <div>
+                    <img className='' src={logoBg} alt="" />
+                </div>
 
-                <img className='' src={logoBg} alt="" />
 
 
             </div>

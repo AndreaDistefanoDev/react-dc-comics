@@ -15,6 +15,10 @@ footer {
     background-image: url("./assets/img/footer-bg.jpg");
     min-height: 100%;
 
+    /*     .height-footer {
+        max-height: 400px;
+    } */
+
 }
 
 #second-section-footer {
@@ -47,7 +51,14 @@ main {
 
     .section-blue {
         min-height: 180px;
+
+        span {
+            font-size: 1rem;
+            padding-left: 0.65rem;
+        }
     }
+
+
 
     .icone {
         width: 55px;
@@ -56,12 +67,12 @@ main {
 
     .etichetta {
         padding: 10px 13px;
-        width: 255px;
+        width: 222px;
         position: relative;
         bottom: 30px;
         right: 18px;
         font-weight: 700;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     button {

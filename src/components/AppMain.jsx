@@ -38,7 +38,7 @@ export default function AppMain() {
             </div>
             <div className='bg-primary section-blue'>
                 <div className="container  text-white text-uppercase">
-                    <div className="row row-col-5 d-flex">
+                    <div className="flex-row row-col-5 d-flex justify-content-between">
                         <div className="col position-icon">
                             <img className='icone' src={digitalComicsLogo} alt="" />
                             <span className='pl-3'>digital comics</span>
